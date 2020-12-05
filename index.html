@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" class="header__logo" />
+            <div class="header-searchbar">
+                <input type="text" name="hotel-search" class="header-searchbar__input" placeholder="Search hotels"/>
+                <i class="fas fa-search header-searchbar__icon"></i>
+            </div>
+            <div class="user-nav">
+                <div class="user-nav__item user-nav__item--mark">
+                    <i class="fas fa-bookmark user-nav__icon"></i>
+                </div>
+                <div class="user-nav__item user-nav__item--message">
+                    <i class="fas fa-inbox user-nav__icon"></i>
+                </div>
+                <div class="user-nav__item user-nav__item--user">
+                    <img src="./images/SOLID.png" class="user-nav__user-avatar" />
+                    <span class="user-nav__user-name">Jonas</span>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="sidebar__items">
+                    <li class="sidebar__item sidebar__item--active">
+                        <a class="sidebar__item-link" href="#">
+                            <i class="fas fa-home sidebar__item-icon"></i>
+                            Hotel
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__item-link" href="#">
+                            <i class="fas fa-plane-departure sidebar__item-icon"></i>
+                            FLIGHT
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__item-link" href="#">
+                            <i class="fas fa-key sidebar__item-icon"></i>
+                            CAR RENTAL
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__item-link" href="#">
+                            <i class="far fa-map sidebar__item-icon"></i>
+                            TOURS
+                        </a>
+                    </li>
+                </ul>
+
+                <footer>
+                    &copy; 2020 by Dynamo. All rights reserved.
+                </footer>
+            </nav>
+            <main class="main">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="images/hotel-1.jpg" alt="Photo of Hotel 1" class="gallery__photo" />
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/hotel-2.jpg" alt="Photo of Hotel 2" class="gallery__photo" />
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="images/hotel-3.jpg" alt="Photo of Hotel 3" class="gallery__photo" />
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__heading">Hotel Las Palmas</h1>
+                    <div class="overview__stars">
+                        <i class="fas fa-star overview__icon--star"></i>
+                        <i class="fas fa-star overview__icon--star"></i>
+                        <i class="fas fa-star overview__icon--star"></i>
+                        <i class="fas fa-star overview__icon--star"></i>
+                        <i class="fas fa-star overview__icon--star"></i>
+                    </div>
+                    <button class="overview__address">
+                        <i class="fas fa-map-marker-alt overview__icon--marker"></i>
+                        <span>Albuferia, Portugal</span>
+                    </button>
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">8.6</div>
+                        <div class="overview__rating-count">429 VOTES</div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="description">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis 
+                            ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto 
+                            voluptate  
+                        </p>
+
+                        <p>
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                        </p>
+                        <div class="list">
+                            <ul class="list__items">
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Close to the beach
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Free airport shuttle
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Air conditioning and heating
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    We speak all languages
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Breakfast included
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Free wifi in all rooms
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Pets allowed
+                                </li>
+                                <li class="list__item">
+                                    <i class="fas fa-greater-than list__item-icon"></i>
+                                    Perfect for families
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="recommends">
+                            <span class="recommends__count">Lucy and 3 other friends recommend this hotel.</span>
+                            <div class="recommends__friennds">
+                                <img src="./images/user-1.jpg" alt="Avatar of user 1" class="recommends__friends-avatar">
+                                <img src="./images/user-2.jpg" alt="Avatar of user 2" class="recommends__friends-avatar">
+                                <img src="./images/user-3.jpg" alt="Avatar of user 3" class="recommends__friends-avatar">
+                                <img src="./images/user-4.jpg" alt="Avatar of user 4" class="recommends__friends-avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <div class="user-review">
+                            <blockquote class="user-review__feedback">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex
+                            </blockquote>
+                            <div class="user-review__summary">
+                                <img src="./images/user-6.jpg" alt="Avatar of user 1" class="user-review__avatar">
+                                <div class="user-review__box">
+                                    <p class="user-review__name">NICK SMITH</p>
+                                    <p class="user-review__date">Feb 23rd, 2017</p>
+                                </div>
+                                <div class="user-review__score">7.8</div>
+                            </div>
+                            <i class="fas fa-quote-left user-review__icon--quote"></i>
+                        </div>
+                        <div class="user-review">
+                            <blockquote class="user-review__feedback">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi
+                            </blockquote>
+                            <div class="user-review__summary">
+                                <img src="./images/user-5.jpg" alt="Avatar of user 1" class="user-review__avatar">
+                                <div class="user-review__box">
+                                    <p class="user-review__name">MARY THOMAS</p>
+                                    <p class="user-review__date">Sept 13th, 2017</p>
+                                </div>
+                                <div class="user-review__score">9.3</div>
+                                <i class="fas fa-quote-left user-review__icon--quote"></i>
+                            </div>
+                        </div>
+                        <div class="user-reviews__nav">
+                            <a href="#" class="user-reviews__all">
+                                Show All
+                                <i class="fas fa-arrow-right user-reviews__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta">
+                    <h2 class="cta__book-now">
+                        GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__visible">Book now</span>
+                        <span class="btn__invisible">Only 4 rooms left</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
